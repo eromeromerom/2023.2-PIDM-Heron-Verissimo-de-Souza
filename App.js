@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import HelloRN from './components/01Hello';
 
 export default function App() {
   return (
@@ -9,6 +9,7 @@ export default function App() {
       <Text>Tudo ok</Text>
       <Text>Testando tudo</Text>
       <StatusBar style="auto" />
+      <HelloRN/>
     </View>
   );
 }
