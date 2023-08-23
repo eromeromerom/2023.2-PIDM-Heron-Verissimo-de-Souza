@@ -3,19 +3,12 @@ import HelloRN from './components/01Hello';
 import HelloRNV2 from './components/02HelloRNV2';
 import MyCat from './components/03MyCat';
 import MyCatTS from './components/04MyCat';
+import Parent from './components/05Parent';
 
 export default function App() {
   return (
     <View  style={estilos.container}>
-      <Text style={{fontSize:20, fontWeight:'bold'}}>
-        Tudo ok
-      </Text>
-      <Text>
-        Testando tudo
-      </Text>
-      <HelloRNV2/>
-      <HelloRN/>
-      <MyCat/>
+      <Parent/>
       <MyCatTS/>
     </View>
   );
