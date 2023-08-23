@@ -1,24 +1,40 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import HelloRN from './components/01Hello';
+import HelloRNV2 from './components/02HelloRNV2';
+import MyCat from './components/03MyCat';
+import MyCatTS from './components/04MyCat';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Tudo ok</Text>
-      <Text>Testando tudo</Text>
-      <StatusBar style="auto" />
+    <View  style={estilos.container}>
+      <Text style={{fontSize:20, fontWeight:'bold'}}>
+        Tudo ok
+      </Text>
+      <Text>
+        Testando tudo
+      </Text>
+      <HelloRNV2/>
       <HelloRN/>
+      <MyCat/>
+      <MyCatTS/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const estilos = StyleSheet.create({
   container: {
+    padding: 30,
     flex: 1,
+    flexDirection: "column",
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  titulo:{
+    padding: 30,
+    fontSize:50
+
+  },
+
 });

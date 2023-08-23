@@ -4,7 +4,7 @@ const HelloRN = () => {
     return (
         <View>
             <Text>
-                Hoje é sexta-feira, viadinho
+                Teste, hello basics
             </Text>    
         </View>
 
