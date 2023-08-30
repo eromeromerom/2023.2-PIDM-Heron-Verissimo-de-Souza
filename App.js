@@ -8,10 +8,14 @@ import Questao01 from './components/tarefa01/Questao01';
 import Questao03 from './components/tarefa01/Questao03';
 import State from './components/06State';
 import Tarefa01 from './components/tarefa01/Tarefa01';
-
+import MyTextInput from './components/07TextInput';
 
 export default function App() {
   return (
-    <Tarefa01/>
+    // <ScrollView>
+
+      <MyTextInput/>
+
+    //</ScrollView>
   );
-  }
+}
