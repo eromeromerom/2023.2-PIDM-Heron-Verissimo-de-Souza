@@ -1,5 +1,6 @@
 import { View, Text, TextInput, StyleSheet, Button } from "react-native"
 import { useState } from "react"
+//import estilosExternos from "./estilos/01Teste"
 
 const MyTextInput = () => {
 
@@ -25,6 +26,7 @@ const MyTextInput = () => {
                     .join(" - ")
                 }
             </Text>
+
 
         </View>
 

@@ -1,10 +1,11 @@
-const estilos = StyleSheet.create({
+const estilosExternos = StyleSheet.create({
     container: {
       flex: 1,
       flexDirection: "column",
       backgroundColor: '#fff',
       alignItems: 'flex-end',
       justifyContent: 'flex-start',
+      color: "gray"
     },
   
     titulo:{
@@ -14,4 +15,4 @@ const estilos = StyleSheet.create({
   
   });
 
-  export default estilos;
+  export default estilosExternos;
