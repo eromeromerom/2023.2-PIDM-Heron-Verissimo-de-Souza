@@ -12,10 +12,12 @@ import { StyleSheet, Text, ScrollView, View, Image } from 'react-native';
 // import JuntarFrases from './components/08JuntarFrases';
 // import Calculadora from './components/09Calculadora';
 // import MyFlatList from './components/11MyFlatList';
+import MyNetworking from './components/14NetWorking/14Networking';
 
 export default function App() {
   return (
     <ScrollView>
+      <MyNetworking/>
 
       
     </ScrollView>
