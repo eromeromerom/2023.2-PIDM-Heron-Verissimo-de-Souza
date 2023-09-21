@@ -13,13 +13,12 @@ import { StyleSheet, Text, ScrollView, View, Image } from 'react-native';
 // import Calculadora from './components/09Calculadora';
 // import MyFlatList from './components/11MyFlatList';
 import MyNetworking from './components/14NetWorking/14Networking';
+import MainScreen from './components/15NavigationAula/15NavStack/MainScreen';
+import Index from './components/16Atividade02/02index';
 
 export default function App() {
   return (
-    <ScrollView>
-      <MyNetworking/>
-
-      
-    </ScrollView>
+    // <MainScreen />
+      <Index/>
   );
 }
