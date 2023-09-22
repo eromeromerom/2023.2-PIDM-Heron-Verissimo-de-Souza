@@ -14,6 +14,7 @@ const estilosAtv = StyleSheet.create({
         paddingRight: 10,
         borderRadius: 10,
         backgroundColor: "deepskyblue",
+        margin: 3
     },
     botaoFont: {
         fontWeight: "bold",
@@ -29,11 +30,22 @@ const estilosAtv = StyleSheet.create({
 
     },
     modal:{
-        backgroundColor: "gray",
-        width: 200,
-        height: 200,
+        flex: 1,
+        width: "100%",
+        height: "100%",
         alignItems: "center",
         justifyContent:  "center"
+
+
+    },
+
+    modalContainer:{
+
+        width: 200,
+        height: 200,
+        paddingLeft: 7,
+        paddingTop: 5,
+        backgroundColor: "deepskyblue"
 
 
     }

@@ -18,7 +18,7 @@ const Cadastro = ({ navigation }) => {
 
             <Text>Cadastro</Text>
 
-            <TextInput 
+            <TextInput
                 style={estilosAtv.textInput}
                 placeholder="Digite seu nome"
                 placeholderTextColor="#7777"
@@ -51,16 +51,18 @@ const Cadastro = ({ navigation }) => {
             />
 
             <Pressable
+                style={estilosAtv.botaoContainer}
                 onPress={() => setModalVisible(true)}>
 
-                <Text >ok</Text>
+                <Text style={estilosAtv.botaoFont} >ok</Text>
 
             </Pressable>
 
             <Pressable
+                style={estilosAtv.botaoContainer}
                 onPress={() => navigation.navigate("Home")}>
 
-                <Text >voltar</Text>
+                <Text style={estilosAtv.botaoFont} >voltar</Text>
 
             </Pressable>
 

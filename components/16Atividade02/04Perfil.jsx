@@ -12,32 +12,35 @@ const Perfil = ({ modalVisible, setModalVisible, nome, idade, email, linkFoto, n
                 //Alert.alert('Modal has been closed.');
                 setModalVisible(!modalVisible);
             }}>
-            <View>
-                <View style={estilosAtv.modal}>
-                    <View >
-                        <Pressable
-                            onPress={() => setModalVisible(!modalVisible)}>
 
-                            <Text >X</Text>
+            <View style={estilosAtv.modal}>
+                <View style={estilosAtv.modalContainer}>
+                    <Pressable
+                        onPress={() => setModalVisible(!modalVisible)}>
 
-                        </Pressable>
+                        <Text >X</Text>
 
-                        <Image source={{ uri: linkFoto }} style={{ width: 40, height: 40 }} />
+                    </Pressable>
 
-                        <Text >Nome: {nome}</Text>
-                        <Text >Idade: {idade}</Text>
-                        <Text >E-mail: {email}</Text>
-                        <Text >Curso: {nome}</Text>
+                    <Image source={{ uri: linkFoto }} style={{ width: 40, height: 40 }} />
 
-                        <Pressable
-                            onPress={() => nav("Home")}>
+                    <Text >Nome: {nome}</Text>
+                    <Text >Idade: {idade}</Text>
+                    <Text >E-mail: {email}</Text>
+                    <Text >Curso: {nome}</Text>
 
-                            <Text >Home</Text>
+                    <Pressable
+                        onPress={() => {
+                            nav("Home")
+                            setModalVisible(!modalVisible)
+                        }}>
+                        
+                        <Text >Home</Text>
 
-                        </Pressable>
-                    </View>
+                    </Pressable>
                 </View>
             </View>
+
         </Modal>
     );
 };
