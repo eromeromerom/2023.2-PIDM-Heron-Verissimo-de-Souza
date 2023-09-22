@@ -1,32 +1,44 @@
-import { Alert, Modal, StyleSheet, Text, Pressable, View } from 'react-native';
-
+import { Image, Alert, Modal, StyleSheet, Text, Pressable, View } from 'react-native';
+import estilosAtv from './01estilos';
 //https://reactnative.dev/docs/modal
 const Perfil = ({ modalVisible, setModalVisible, nome, idade, email, linkFoto, nav }) => {
     return (
-            <Modal
-                animationType="slide"
-                transparent={true}
-                visible={modalVisible}
-                onRequestClose={() => {
-                    //Alert.alert('Modal has been closed.');
-                    setModalVisible(!modalVisible);
-                }}>
-                <View style={{backgroundColor: "gray"}}>
+        <Modal
+
+            animationType="slide"
+            transparent={true}
+            visible={modalVisible}
+            onRequestClose={() => {
+                //Alert.alert('Modal has been closed.');
+                setModalVisible(!modalVisible);
+            }}>
+            <View>
+                <View style={estilosAtv.modal}>
                     <View >
+                        <Pressable
+                            onPress={() => setModalVisible(!modalVisible)}>
+
+                            <Text >X</Text>
+
+                        </Pressable>
+
+                        <Image source={{ uri: linkFoto }} style={{ width: 40, height: 40 }} />
+
                         <Text >Nome: {nome}</Text>
                         <Text >Idade: {idade}</Text>
                         <Text >E-mail: {email}</Text>
                         <Text >Curso: {nome}</Text>
 
-                        <Pressable                            
+                        <Pressable
                             onPress={() => nav("Home")}>
-                            
+
                             <Text >Home</Text>
-                        
+
                         </Pressable>
                     </View>
                 </View>
-            </Modal>
+            </View>
+        </Modal>
     );
 };
 
