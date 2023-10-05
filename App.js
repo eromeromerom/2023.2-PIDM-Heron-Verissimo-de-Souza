@@ -15,10 +15,12 @@ import { StyleSheet, Text, ScrollView, View, Image } from 'react-native';
 import MyNetworking from './components/14NetWorking/14Networking';
 import MainScreen from './components/15NavigationAula/15NavStack/MainScreen';
 import Index from './components/16Atividade02/02index';
+import Questao01 from './components/Ap01/Questao01';
 
 export default function App() {
   return (
     // <MainScreen />
-      <Index/>
+      // <Index/>
+    <Questao01/>
   );
 }
