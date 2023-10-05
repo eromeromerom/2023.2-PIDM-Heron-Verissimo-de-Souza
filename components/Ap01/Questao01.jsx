@@ -13,6 +13,7 @@ const Questao01 = () => {
     const [horario, setHorario] = useState("")
     const [valor, setValor] = useState("")
     const [tipo, setTipo] = useState("")
+    const [dataCompra, setDataCompra] = useState("")
 
     return (
         <View style={estilos.container}>
@@ -23,6 +24,7 @@ const Questao01 = () => {
                  tipo={tipo}
                  modalVisible={modalVisible}
                  setModalVisible={setModalVisible}
+                 dataCompra={dataCompra}
             />
 
             <SectionList
@@ -36,7 +38,7 @@ const Questao01 = () => {
                     }
                 }
                 renderItem={
-                    ({ item }) => {
+                    ({ item, section}) => {
 
                         let icon
 
@@ -63,7 +65,8 @@ const Questao01 = () => {
                                                 setTipo(item.tipo)
                                                 setValor(item.valor)
                                                 setHorario(item.horario)
-                                                setModalVisible(!modalVisible)                         
+                                                setModalVisible(!modalVisible) 
+                                                setDataCompra(section.title)                        
                                             }}
                                             mode="contained"
                                         />
