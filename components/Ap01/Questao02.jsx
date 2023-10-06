@@ -2,7 +2,7 @@ import { Image, Alert, Modal, StyleSheet, Text, Pressable, View } from 'react-na
 import Estilos from './Estilos';
 
 //https://reactnative.dev/docs/modal
-const Questao02 = ({ modalVisible, setModalVisible, nome, horario, valor, dataCompra, tipo}) => {
+const Questao02 = ({ modalVisible, setModalVisible, nome, horario, valor, dataCompra, tipo }) => {
     return (
         <Modal
 
@@ -14,7 +14,7 @@ const Questao02 = ({ modalVisible, setModalVisible, nome, horario, valor, dataCo
                 setModalVisible(!modalVisible);
             }}>
 
-            <View style={Estilos.container} >
+            <View style={Estilos.body} >
                 <View >
                     <Pressable
                         onPress={() => setModalVisible(!modalVisible)}>
@@ -23,16 +23,16 @@ const Questao02 = ({ modalVisible, setModalVisible, nome, horario, valor, dataCo
 
                     </Pressable>
 
-                    <Text >Nome: {nome}</Text>
-                    <Text >Horario: {horario}</Text>
-                    <Text >Valor: {valor}</Text>
+                    <Text>Nome: {nome}</Text>
+                    <Text>Horario: {horario}</Text>
+                    <Text>Valor: {valor}</Text>
                     <Text>Data: {dataCompra}</Text>
 
                     <Pressable
                         onPress={() => {
                             setModalVisible(!modalVisible)
                         }}>
-                        
+
 
                     </Pressable>
                 </View>

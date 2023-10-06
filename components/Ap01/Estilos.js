@@ -1,12 +1,13 @@
 import {StyleSheet} from "react-native"
 
 const Estilos = StyleSheet.create ({
-    container: {
+    body: {
         flex: 1,
         justifyContent: "center",
         alignItems:"center",
         flexDirection: "row",
-        backgroundColor: "white"
+        backgroundColor: "gray",
+        padding: 15
 
     },
     header: {
@@ -14,7 +15,44 @@ const Estilos = StyleSheet.create ({
         fontSize: 25,
         color: "brown"
 
+    },
+    botao: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems:"flex-start",
+        flexDirection: "row",
+        backgroundColor: "white",
+        borderBottomWidth: 2,
+        borderCurve: 1,
+        
+
+    },
+    icon: {
+        height: "100%",
+        width: "100%",
+        backgroundColor: "green",
+        flex: 1
+        
+    },
+    nome: {
+        height: "100%",
+        width: "100%",
+        backgroundColor: "pink",
+        flex: 5,
+        marginLeft: 20,
+        justifyContent: "center"
+
+    },
+    valor: {
+        height: "100%",
+        width: "100%",
+        backgroundColor: "red",
+        flex: 2,
+        alignItems: "flex-end",
+        justifyContent: "center",
+        paddingRight: 5
     }
+
 
 
 })
