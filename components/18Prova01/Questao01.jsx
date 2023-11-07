@@ -16,7 +16,7 @@ const Questao01 = () => {
     const [dataCompra, setDataCompra] = useState("")
 
     return (
-        <ScrollView>
+        // <ScrollView>
             <View style={Estilos.body}>
                 <Questao02
                     nome={nome}
@@ -103,7 +103,9 @@ const Questao01 = () => {
                                                     setModalVisible(!modalVisible)
                                                     setDataCompra(section.title)
                                                 }}
+
                                                 style={Estilos.valor}>
+
                                                 <Text>{" R$ " + item.valor}</Text>
 
                                             </Pressable>
@@ -123,7 +125,7 @@ const Questao01 = () => {
 
 
             </View>
-        </ScrollView>
+        // </ScrollView>
 
     )
 }

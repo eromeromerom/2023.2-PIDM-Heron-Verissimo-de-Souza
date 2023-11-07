@@ -21,6 +21,7 @@ const dados = [
             { icone: "", nome: "Pag*Bodegas", horario: "10:41", valor: "226,24", tipo: "carrinho", id: 7 }
         ]
     },
+    
 ]
 
 export default dados

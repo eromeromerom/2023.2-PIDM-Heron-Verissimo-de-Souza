@@ -31,7 +31,7 @@ const Estilos = StyleSheet.create ({
         height: "100%",
         width: "100%",
         backgroundColor: "green",
-        flex: 1
+        flex: 1.55
         
     },
     nome: {
@@ -39,7 +39,7 @@ const Estilos = StyleSheet.create ({
         width: "100%",
         backgroundColor: "pink",
         flex: 5,
-        marginLeft: 20,
+        paddingLeft: 5,
         justifyContent: "center"
 
     },
