@@ -16,11 +16,13 @@ import MyNetworking from './components/14NetWorking/14Networking';
 import MainScreen from './components/15NavigationAula/15NavStack/MainScreen';
 import Index from './components/16Atividade02/02index';
 import Questao01 from './components/18Prova01/Questao01';
+import CadastrarUsuario from './components/19CrudFirebase/usuario/CadastrarUsuario';
 
 export default function App() {
   return (
     // <MainScreen />
       // <Index/>
-    <Questao01/>
+    <CadastrarUsuario/>
+   
   );
 }

@@ -33,3 +33,5 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+components/19CrudFirebase/firebase/firebase_config.js
