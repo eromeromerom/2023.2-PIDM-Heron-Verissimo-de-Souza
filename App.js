@@ -17,12 +17,13 @@ import MainScreen from './components/15NavigationAula/15NavStack/MainScreen';
 import Index from './components/16Atividade02/02index';
 import Questao01 from './components/18Prova01/Questao01';
 import CadastrarUsuario from './components/19CrudFirebase/usuario/CadastrarUsuario';
+import LoginUsuario from './components/19CrudFirebase/usuario/LoginUsuario';
 
 export default function App() {
   return (
     // <MainScreen />
       // <Index/>
-    <CadastrarUsuario/>
+    <LoginUsuario/>
    
   );
 }

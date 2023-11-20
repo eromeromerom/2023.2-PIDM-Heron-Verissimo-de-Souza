@@ -1,7 +1,9 @@
 import { Text, View, TextInput, Pressable } from "react-native";
 import { useState, useEffect } from "react";
 
+import { auth } from "../firebase/firebase_config"; 
 import { estilos } from "../CSS/MeuCSS";
+import UsuarioService from "../service/UsuarioService";
 
 const CadastrarUsuario = () => {
     const [email, setEmail] = useState("")
@@ -15,6 +17,18 @@ const CadastrarUsuario = () => {
         []
 
     )
+
+    const acaoBotao = () => {
+        UsuarioService.signIn(
+            auth,
+            email,
+            password,
+            (userCredential) => {
+                console.log(userCredential)
+            }
+            )
+
+    }
 
     return(
         <View style={estilos.container}>
@@ -38,6 +52,7 @@ const CadastrarUsuario = () => {
             />
             <Pressable
                 style={estilos.botaoContainer}
+                onPress={acaoBotao}
             >
                 <Text
                     style={estilos.botaoText}

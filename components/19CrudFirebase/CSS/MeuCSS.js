@@ -24,7 +24,7 @@ const estilos = StyleSheet.create({
     botaoContainer: {
         width: '60%',
         margin: 10,
-        backgroundColor: '#007ACC',
+        backgroundColor: '#2087ee',
         alignItems: 'center',
         borderRadius: 5
     },
