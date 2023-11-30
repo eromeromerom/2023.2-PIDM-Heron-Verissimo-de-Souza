@@ -23,7 +23,7 @@ export default function App() {
   return (
     // <MainScreen />
       // <Index/>
-    <LoginUsuario/>
+    <CadastrarUsuario/>
    
   );
 }
