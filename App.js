@@ -13,17 +13,24 @@ import { StyleSheet, Text, ScrollView, View, Image } from 'react-native';
 // import Calculadora from './components/09Calculadora';
 // import MyFlatList from './components/11MyFlatList';
 import MyNetworking from './components/14NetWorking/14Networking';
-import MainScreen from './components/15NavigationAula/15NavStack/MainScreen';
+
+import NavContainer from './components/15NavigationAula/15NavStack/NavContainer';
+
 import Index from './components/16Atividade02/02index';
+
 import Questao01 from './components/18Prova01/Questao01';
+
 import CadastrarUsuario from './components/19CrudFirebase/usuario/CadastrarUsuario';
 import LoginUsuario from './components/19CrudFirebase/usuario/LoginUsuario';
+import NavCadLog from './components/19CrudFirebase/usuario/NavUsuario';
 
 export default function App() {
   return (
     // <MainScreen />
       // <Index/>
-    <CadastrarUsuario/>
+    // <CadastrarUsuario/>
+    // <LoginUsuario/>
+   <NavCadLog/> 
    
   );
 }

@@ -13,6 +13,7 @@ const MyFlatList = () => {
     //     {key: 10, nome: "Lefferson", nota: 5.8},
     //     {key: 11, nome: "Mefferson", nota: 4.0},
     //     {key: 12, nome: "Nefferson", nota: 6.1}
+     
     // ]
 
     const dados = [

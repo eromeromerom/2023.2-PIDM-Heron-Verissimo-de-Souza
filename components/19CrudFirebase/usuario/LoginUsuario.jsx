@@ -1,16 +1,16 @@
 import { Text, View, TextInput, Pressable } from "react-native";
 import { useState, useEffect } from "react";
 
-import { auth } from "../firebase/firebase_config"; 
+import { auth } from "../firebase/firebase_config";
 import { estilos } from "../CSS/MeuCSS";
 import UsuarioService from "../service/UsuarioService";
 
-const LoginUsuario = () => {
+const LoginUsuario = ({navigation}) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
     useEffect(
-        ()=> {
+        () => {
 
 
         },
@@ -26,37 +26,37 @@ const LoginUsuario = () => {
             (userCredential) => {
                 console.log(userCredential)
             }
-            )
-
+        )
     }
 
-    return(
+    return (
         <View style={estilos.container}>
             <Text
-               style={estilos.cabecalho} 
+                style={estilos.cabecalho}
             >
                 Login Usuário
             </Text>
-            <TextInput 
+            <TextInput
                 style={estilos.input}
-                placeholder="E-mail"  
-                onChangeText={email=>setEmail(email)} 
-                value={email}         
+                placeholder="E-mail"
+                onChangeText={email => setEmail(email)}
+                value={email}
             />
             <TextInput
                 style={estilos.input}
                 placeholder="Senha"
                 secureTextEntry={true}
-                onChangeText={password=>setPassword(password)}
+                onChangeText={password => setPassword(password)}
                 value={password}
             />
             <Pressable
                 style={estilos.botaoContainer}
                 onPress={acaoBotao}
+                onPressOut={() => navigation.navigate("TelaCadLog")}
             >
-                <Text
-                    style={estilos.botaoText}
-                >Logar</Text>
+                <Text style={estilos.botaoText}>
+                    Logar
+                </Text>
             </Pressable>
         </View>
     )

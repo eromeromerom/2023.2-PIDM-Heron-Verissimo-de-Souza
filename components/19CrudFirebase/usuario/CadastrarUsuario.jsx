@@ -5,7 +5,7 @@ import { auth } from "../firebase/firebase_config";
 import { estilos } from "../CSS/MeuCSS";
 import UsuarioService from "../service/UsuarioService";
 
-const CadastrarUsuario = () => {
+const CadastrarUsuario = ({navigation}) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
@@ -19,7 +19,7 @@ const CadastrarUsuario = () => {
     )
 
     const acaoBotao = () => {
-        UsuarioService.signIn(
+        UsuarioService.signUp(
             auth,
             email,
             password,
@@ -53,10 +53,11 @@ const CadastrarUsuario = () => {
             <Pressable
                 style={estilos.botaoContainer}
                 onPress={acaoBotao}
+                onPressOut={() => navigation.navigate("TelaCadLog")}
             >
-                <Text
-                    style={estilos.botaoText}
-                >Cadastrar</Text>
+                <Text style={estilos.botaoText}>
+                    Cadastrar
+                </Text>
             </Pressable>
         </View>
     )

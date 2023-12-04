@@ -7,13 +7,15 @@ import Screen03 from "./Screen03";
 
 const Stack = createNativeStackNavigator()
 
-const MainScreen = () => {
+const NavContainer = () => {
     return (
         <NavigationContainer initialRouteName="Screeen01">
             <Stack.Navigator>
+                
                 <Stack.Screen name="Screen01" component={Screen01} options={{title:"Tela 01"}}/>
                 <Stack.Screen name="Screen02" component={Screen02} options={{title:"Tela 02"}}/>
                 <Stack.Screen name="Screen03" component={Screen03} options={{title:"Tela 03"}}/>
+                
             </Stack.Navigator>
         </NavigationContainer>
     )
@@ -21,4 +23,4 @@ const MainScreen = () => {
 
 }
 
-export default MainScreen
+export default NavContainer
