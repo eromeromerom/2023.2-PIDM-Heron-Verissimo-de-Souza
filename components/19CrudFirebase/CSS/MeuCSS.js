@@ -29,6 +29,13 @@ const estilos = StyleSheet.create({
         borderRadius: 5
     },
 
+    botaoContainerExcluirEditar: {
+        margin: 2,
+        backgroundColor: '#2087ee',
+        alignItems: 'center',
+        borderRadius: 5
+    },
+
     botaoText: {
         margin: 10,
         color:'white',
